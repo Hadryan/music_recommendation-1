@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <div>
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Music Recommendation System</h2>
+            <h3>Age</h3>
+            <input id="first" name="age" type="number " required>
+
+            <h3>Gender</h3><br><select name="gender" class="options" id="research" required="required">
+                <option class="options" value="1">Male </option>
+                <option class="options" value="0">Female </option>
+            </select>
+            <br><br><button class="options" id="sub" type="submit ">SEARCH </button>
+            <br>
+
+
+
+
+
+        </form>
+
+
+
+        <br><br>
+        <h3 style="color: #f1e189;">{{ prediction_text }} </h3>
+    </div>
+    <style>
+        body {
+            background-color: #222831;
+            text-align: center;
+            padding: 0px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            color: #f6f7d7;
+            font-size: 5.625rem;
+            margin: 50px auto 0 auto;
+            font-family: 'Sacramento', cursive;
+        }
+
+        h2 {
+            color: #f6f7d7;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: normal;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #14ffec;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #fuel {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #fuel:hover {
+            background-color: coral;
+        }
+
+        #research {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #research:hover {
+            background-color: coral;
+        }
+
+        #resea {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #resea:hover {
+            background-color: coral;
+        }
+
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #sub:hover {
+            background-color: darkcyan;
+        }
+
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+
+
+
+
+
+</body>
+
+</html>
